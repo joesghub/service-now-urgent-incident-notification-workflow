@@ -34,6 +34,6 @@ Your company operates globally across multiple time zones. Critical incidents of
 - Intelligently route incidents based on engineer expertise and availability
   - Hello
 - Consider time zones and current workloads when selecting responders
-  - 
+  - Yes
 - Learn from historical resolution patterns to improve future routing decisions
-  - 
+  - Hi
