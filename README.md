@@ -42,8 +42,9 @@ Your company operates globally across multiple time zones. Critical incidents of
 
 **Explain how an AI agent could enhance your incident notification system to:**
 - Intelligently route incidents based on engineer expertise and availability
+- Learn from historical resolution patterns to improve future routing decisions
   - At Uber, we have gloabl teams that follow well establish corporate hierarchies. Our ServiceNow instance is aware of these relationships. An AI agent could learn/develop a "Chain of Command" workflow that raises escalations to Engineer managers who are in the same time zone as the incident and currently online/working. This would allow for better oversight of all tickets and reduce delays to resolution by giving managers notifications that a ticket has gone unassigned or unresolved for too long. In future iterations the AI agent would be trained on past resolved issues and their resolvers to map out an internal bespoke incident resolution rubric. The ruebric would allow the AI agent to make better ticket assignemnt decisions without the approval of a manager for each ticketed incident. 
 - Consider time zones and current workloads when selecting responders
-  - Yes
-- Learn from historical resolution patterns to improve future routing decisions
-  - Hi
+  - The agent would compare the potenial asignee's time zone to the time zone of the submitted ticket. It would also search for the amount of tickets currently assigned tot he pool of asignees. This way the agent could both assign the ticket to someone capable of solving the issue and ensure everyone has a manageable amount of tickets assigned. While searching it could even send notification about employees who seem to have too many active tickets currently assigned. 
+
+  
