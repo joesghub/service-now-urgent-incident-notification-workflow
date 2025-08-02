@@ -3,9 +3,11 @@
 ## System Overview
 *Description of the working incident notification system*
 
+## Architecture Diagram
+![Critical Priority Network Incident Workflow Diagram](https://raw.githubusercontent.com/joesghub/service-now-urgent-incident-notification-workflow/refs/heads/main/screenshots/Critical%20Priority%20Network%20Incident%20Workflow%20Diagram.png)
 
 ## Implementation Steps
-*How you fixed the workflow and configured notifications*
+I began by inspecting the current "Kura WL1 Flow" in WorkFlow Studio. The original flow was set to Trigger on Incidents created witht he Urgency "2 - Medium"
 ![Original Workflow Trigger](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/og%20Kura%20WL1%20Flow%20-%20Trigger.png?raw=true)
 ![Original Workflow Action](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/og%20Kura%20WL1%20Flow%20-%20Action.png?raw=true)
 ![Filtering Notification to Find the One Used in the Original Workflow](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/filtering%20for%20Notifications.png?raw=true)
@@ -22,8 +24,7 @@
 ![New Email Notification](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/new%20notif%20email.png?raw=true)
 
 
-## Architecture Diagram
-![Critical Priority Network Incident Workflow Diagram](https://raw.githubusercontent.com/joesghub/service-now-urgent-incident-notification-workflow/refs/heads/main/screenshots/Critical%20Priority%20Network%20Incident%20Workflow%20Diagram.png)
+
 
 
 ## AI Scenario
