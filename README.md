@@ -7,7 +7,7 @@ This is a multi-purpose Critical Priority Incident Workflow that alerts teams of
 ![Critical Priority Network Incident Workflow Diagram](https://raw.githubusercontent.com/joesghub/service-now-urgent-incident-notification-workflow/refs/heads/main/screenshots/Critical%20Priority%20Network%20Incident%20Workflow%20Diagram.png)
 
 ## Implementation Steps
-I began by inspecting the current "Kura WL1 Flow" in WorkFlow Studio. The original flow was set to Trigger on Incidents created with the Urgency "2 - Medium" and no Assignment group was selected.
+I began by inspecting the current "Kura WL1 Flow" in WorkFlow Studio. The original flow was set to Trigger on Incidents created with the Urgency "2 - Medium" for any Assignment group selected.
 ![Original Workflow Trigger](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/og%20Kura%20WL1%20Flow%20-%20Trigger.png?raw=true)
 The action was set to send a notification. 
 ![Original Workflow Action](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/og%20Kura%20WL1%20Flow%20-%20Action.png?raw=true)
@@ -25,7 +25,7 @@ I assigned the Networking Operations group as the recipient.
 ![New Notification Recipients](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/new%20Notif%20recipients.png?raw=true)
 Based on other notification being sent out, I updated the email notification template and enhanced the message body with dynamic fields from the critical prioirity record.
 ![New Notification Template](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/new%20Notif%20email%20temp.png?raw=true)
-The trigger in my workflow now activated when incident tickets with Prioirity of "1 - Critical" and Categoryof "Network" were created. The priority is determined by the Imapct and Urgency values selected by the Caller submitting the ticket. 
+The trigger in my workflow now activated when incident tickets with Prioirity of "1 - Critical" and Category of "Network" were created. The priority is determined by the Imapct and Urgency values selected by the Caller submitting the ticket. 
 ![New Workflow Trigger](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/new%20flow%20trigger.png?raw=true)
 Now I was able to use the updated Notification record in my workflow action. 
 ![New Workflow Action](https://github.com/joesghub/service-now-urgent-incident-notification-workflow/blob/main/screenshots/new%20flow%20action.png?raw=true)
